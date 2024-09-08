@@ -28,10 +28,10 @@ const Navbar = () => {
           />
           <div className='hidden lg:block text-bgButton font-semibold'>
             <ul className='flex gap-6'>
-              <li className='cursor-pointer hover:text-bgButtonHover'>Home</li>
-              <li className='cursor-pointer hover:text-bgButtonHover'>Services</li>
-              <li className='cursor-pointer hover:text-bgButtonHover'>About</li>
-              <li className='cursor-pointer hover:text-bgButtonHover'>Contact Us</li>
+              <Link href="/"><li className='cursor-pointer hover:text-bgButtonHover'>Home</li></Link>
+              <Link href="/"><li className='cursor-pointer hover:text-bgButtonHover'>Services</li></Link>
+              <Link href="/"><li className='cursor-pointer hover:text-bgButtonHover'>About</li></Link>
+              <Link href="/"><li className='cursor-pointer hover:text-bgButtonHover'>Contact Us</li></Link>
             </ul>
           </div>
         </div>
@@ -46,11 +46,11 @@ const Navbar = () => {
             onClick={handleClose}
           />
         </div>
-        <div className='flex flex-col gap-5 mt-14 justify-center items-center'>
-          <Link href="/">Home</Link>
-          <Link href="/">Services</Link>
-          <Link href="/">About</Link>
-          <Link href="/">Contect Us</Link>
+        <div className='flex flex-col gap-10 mt-16 justify-center items-center'>
+          <Link href="/" className='text-[1.3rem]' onClick={handleClose}>Home</Link>
+          <Link href="/" className='text-[1.3rem]' onClick={handleClose}>Services</Link>
+          <Link href="/" className='text-[1.3rem]' onClick={handleClose}>About</Link>
+          <Link href="/" className='text-[1.3rem]' onClick={handleClose}>Contact Us</Link>
         </div>
       </div>
     </>
