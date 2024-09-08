@@ -38,7 +38,7 @@ const Navbar = () => {
       </nav>
 
       <div className={`fixed top-0 right-0 lg:hidden w-[80%]   max-w-[300px] h-screen bg-[#181b20] text-white font-semibold z-50  flex flex-col
-          transform transition-transform duration-500 ${isVisible ? 'translate-x-0' : 'translate-x-full hidden'}`}
+          transform transition-transform ease-in duration-500 ${isVisible ? 'translate-x-0' : 'translate-x-full'}`}
       >
         <div className='relative left-[88%] top-[1rem] '>
           <CloseIcon
