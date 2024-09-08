@@ -43,9 +43,9 @@ export default function Home() {
                 <ButtonPrimary text={"Get In Touch"} />
               </div>
             </div>
-            <div>
+            {/* <div>
               other content
-            </div>
+            </div> */}
 
           </div>
 
@@ -140,7 +140,7 @@ export default function Home() {
 
       <section>
         <div className="bg-[#181b20] text-white py-6 flex flex-col justify-center items-center px-8 gap-5 mt-5 md:mx-10 md:rounded-lg md:mt-10">
-          <h2 className="font-semibold">our services</h2>
+          <h2 className="font-semibold text-bgButton">our services</h2>
           <h1 className="text-[2rem] text-center leading-9 font-bold">Delivering The Right Solutions</h1>
           <div>
             <p className="text-center mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
