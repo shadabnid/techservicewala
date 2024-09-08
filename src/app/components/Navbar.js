@@ -37,16 +37,16 @@ const Navbar = () => {
         </div>
       </nav>
 
-      <div className={`fixed top-0 right-0 lg:hidden w-[80%]   max-w-[300px] h-screen bg-[#181b20] text-white font-semibold z-50  flex flex-col justify-center items-center 
+      <div className={`fixed top-0 right-0 lg:hidden w-[80%]   max-w-[300px] h-screen bg-[#181b20] text-white font-semibold z-50  flex flex-col
           transform transition-transform duration-500 ${isVisible ? 'translate-x-0' : 'translate-x-full hidden'}`}
       >
-        <div className='relative top-[-6rem] left-[30%] '>
+        <div className='relative left-[88%] top-[1rem] '>
           <CloseIcon
-            className='top=[0%] text-[1.5rem]'
+            className=' text-[1.5rem]'
             onClick={handleClose}
           />
         </div>
-        <div className='flex flex-col gap-5'>
+        <div className='flex flex-col gap-5 mt-14 justify-center items-center'>
           <Link href="/">Home</Link>
           <Link href="/">Services</Link>
           <Link href="/">About</Link>
