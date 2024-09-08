@@ -8,12 +8,12 @@ import { FaInstagramSquare } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <div className='bg-[#242529] text-[#505154] py-6 px-8'>
+        <div className='bg-[#242529] text-white py-6 px-8'>
             <ul className='flex justify-around font-orbitron '>
-                <Link href="/" className='hover:text-bgButtonHover'><li>About</li></Link>
-                <Link href="/" className='hover:text-bgButtonHover'> <li>Services</li></Link>
-                <Link href="/" className='hover:text-bgButtonHover'><li>Contact</li></Link>
-                <Link href="/" className='hover:text-bgButtonHover'><li>career</li></Link>
+                <Link href="/AboutUs" className='hover:text-bgButtonHover'><li>About</li></Link>
+                <Link href="/Services" className='hover:text-bgButtonHover'> <li>Services</li></Link>
+                <Link href="/ContactUs" className='hover:text-bgButtonHover'><li>Contact</li></Link>
+                <Link href="/career" className='hover:text-bgButtonHover'><li>career</li></Link>
             </ul>
 
             <div className='mt-8 md:mx-[7rem] md:flex md:justify-between'>

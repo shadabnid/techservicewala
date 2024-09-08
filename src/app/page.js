@@ -7,6 +7,7 @@ import { CgWebsite } from "react-icons/cg";
 
 import { ButtonPrimary } from "./components/Buttons";
 import { ServiceCard } from "./components/Cards";
+import Link from "next/link";
 
 
 const serviceCardData = [{
@@ -40,7 +41,8 @@ export default function Home() {
               <p className="mt-10 font-inter md:text-[1.2rem]" >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus.</p>
               <div className="mt-10">
-                <ButtonPrimary text={"Get In Touch"} />
+
+                <Link href="/ContactUs"><ButtonPrimary text={"Get In Touch"} /></Link>
               </div>
             </div>
             {/* <div>
@@ -86,8 +88,8 @@ export default function Home() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
             </p>
             <div className="flex flex-col gap-6  justify-center items-center md:flex-row">
-              <ButtonPrimary text={"Learn More"} />
-              <ButtonPrimary text={"Contact Us"} />
+             <Link href="/AboutUs"> <ButtonPrimary text={"Learn More"} /></Link>
+             <Link href="/ContactUs"> <ButtonPrimary text={"Contact Us"} /> </Link>
             </div>
           </div>
 
