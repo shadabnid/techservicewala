@@ -21,24 +21,24 @@ const Navbar = () => {
       <nav className='sticky top-0 z-40 px-4 py-6 bg-[#181b20]'>
 
         <div className='flex justify-between items-center '>
-          <span className='text-[1.5rem] text-bgButton'>LOGO</span>
+          <span className='text-[1.5rem] text-white'>LOGO</span>
           <MenuIcon
-            className='text-[1.5rem] text-bgButton hover:bg-bgButtonHover cursor-pointer lg:hidden'
+            className='text-[1.5rem] text-white hover:bg-bgButtonHover cursor-pointer lg:hidden'
             onClick={toggleVisibility}
           />
-          <div className='hidden lg:block text-bgButton font-semibold'>
+          <div className='hidden lg:block text-white font-semibold'>
             <ul className='flex gap-6'>
               <Link href="/"><li className='cursor-pointer hover:text-bgButtonHover'>Home</li></Link>
-              <Link href="/"><li className='cursor-pointer hover:text-bgButtonHover'>Services</li></Link>
-              <Link href="/"><li className='cursor-pointer hover:text-bgButtonHover'>About</li></Link>
-              <Link href="/"><li className='cursor-pointer hover:text-bgButtonHover'>Contact Us</li></Link>
+              <Link href="/Services"><li className='cursor-pointer hover:text-bgButtonHover'>Services</li></Link>
+              <Link href="/AboutUs"><li className='cursor-pointer hover:text-bgButtonHover'>About</li></Link>
+              <Link href="/ContactUs"><li className='cursor-pointer hover:text-bgButtonHover'>Contact Us</li></Link>
             </ul>
           </div>
         </div>
       </nav>
 
       <div className={`fixed top-0 right-0 lg:hidden w-[80%]   max-w-[300px] h-screen bg-[#181b20] text-white font-semibold z-50  flex flex-col
-          transform transition-transform duration-500 ${isVisible ? 'translate-x-0' : 'translate-x-full hidden'}`}
+          transform transition-transform ease-in duration-500 ${isVisible ? 'translate-x-0' : 'translate-x-full'}`}
       >
         <div className='relative left-[88%] top-[1rem] '>
           <CloseIcon
@@ -48,9 +48,9 @@ const Navbar = () => {
         </div>
         <div className='flex flex-col gap-10 mt-16 justify-center items-center'>
           <Link href="/" className='text-[1.3rem]' onClick={handleClose}>Home</Link>
-          <Link href="/" className='text-[1.3rem]' onClick={handleClose}>Services</Link>
-          <Link href="/" className='text-[1.3rem]' onClick={handleClose}>About</Link>
-          <Link href="/" className='text-[1.3rem]' onClick={handleClose}>Contact Us</Link>
+          <Link href="/Services" className='text-[1.3rem]' onClick={handleClose}>Services</Link>
+          <Link href="/AboutUs" className='text-[1.3rem]' onClick={handleClose}>About</Link>
+          <Link href="/ContactUs" className='text-[1.3rem]' onClick={handleClose}>Contact Us</Link>
         </div>
       </div>
     </>
