@@ -8,7 +8,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <div className='bg-[#242529] text-white py-6 px-8'>
+        <div className='bg-[#181b20] text-white py-6 px-8'>
             <ul className='flex justify-around font-orbitron '>
                 <Link href="/AboutUs" className='hover:text-bgButtonHover'><li>About</li></Link>
                 <Link href="/Services" className='hover:text-bgButtonHover'> <li>Services</li></Link>
@@ -18,7 +18,7 @@ const Footer = () => {
 
             <div className='mt-8 md:mx-[7rem] md:flex md:justify-between'>
 
-                <div className='flex gap-5'>
+                <div className='flex gap-[12rem] ml-1'>
                     <span>Privacy Policy</span>
                     <span>Terms of Use</span>
                 </div>

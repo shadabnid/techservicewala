@@ -1,10 +1,12 @@
 "use client"
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
 import { useState } from 'react';
 
 import { GiHamburgerMenu as MenuIcon } from "react-icons/gi";
 import { IoCloseSharp as CloseIcon } from "react-icons/io5";
+import Logo from '../../../public/logo.jpeg'
 
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -21,13 +23,13 @@ const Navbar = () => {
       <nav className='sticky top-0 z-40 px-4 py-6 bg-[#181b20]'>
 
         <div className='flex justify-between items-center '>
-          <span className='text-[1.5rem] text-white'>LOGO</span>
+          <Image src={Logo} width={50} height={10} alt='Logo' className='rounded-full'/>
           <MenuIcon
             className='text-[1.5rem] text-white hover:bg-bgButtonHover cursor-pointer lg:hidden'
             onClick={toggleVisibility}
           />
-          <div className='hidden lg:block text-white font-semibold'>
-            <ul className='flex gap-6'>
+          <div className='hidden lg:block text-white '>
+            <ul className='flex gap-8 mr-16'>
               <Link href="/"><li className='cursor-pointer hover:text-bgButtonHover'>Home</li></Link>
               <Link href="/Services"><li className='cursor-pointer hover:text-bgButtonHover'>Services</li></Link>
               <Link href="/AboutUs"><li className='cursor-pointer hover:text-bgButtonHover'>About</li></Link>
