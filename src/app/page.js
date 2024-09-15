@@ -52,7 +52,7 @@ export default function Home() {
               Software Development Agency
             </h1>
             <p className="mt-4 text-base md:text-lg lg:text-2xl text-white max-w-6xl mx-auto">
-            "Professional Web Design Without Breaking the Bank!"
+            &quot;Professional Web Design Without Breaking the Bank!&quot;
             </p>
             <div className="flex flex-col gap-6  justify-center items-center md:flex-row">
              <Link href="/AboutUs"> <ButtonPrimary text={"Learn More"} /></Link>

@@ -43,7 +43,7 @@ const ContactUs = () => {
       <div className="w-full max-w-md p-6 mr-6 flex flex-col justify-center">
         <p className="text-sm font-bold text-gray-700">CONTACT</p>
         <h1 className="text-5xl sm:text-6xl font-bold text-black mb-6">
-          We're here to help you grow
+          We&apos;re here to help you grow
         </h1>
         <p className="text-xl sm:text-2xl text-gray-700">
           Feel free to reach out to us through your preferred method of contact.

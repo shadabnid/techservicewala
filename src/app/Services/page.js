@@ -38,10 +38,10 @@ const Services = () => {
               We offer versatile marketing strategies, cutting-edge business
               solutions, and innovative IT services. Our approach blends
               creative expertise with data-driven paid media campaigns to ensure
-              maximum results for your business. Whether you're looking to
+              maximum results for your business. Whether you&apos;re looking to
               enhance your digital presence, develop your brand, or improve IT
-              infrastructure, we're here to help you achieve sustainable growth
-              and long-term success. Let's collaborate to take your business to
+              infrastructure, we&apos;re here to help you achieve sustainable growth
+              and long-term success. Let&apos;s collaborate to take your business to
               the next level!
             </p>
             <div className="flex space-x-4">
