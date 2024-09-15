@@ -1,11 +1,11 @@
 "use client";
+import axios from "axios";
 import React, { useState } from "react";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    businessName: "",
     service: "",
     phoneNumber: "",
     message: "",
@@ -29,13 +29,25 @@ const ContactUs = () => {
       ...prevData,
       [name]: value,
     }));
+
+
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission (e.g., sending data to a backend or an API)
-    console.log("Form data submitted:", formData);
-  };
+    try {
+      const res = await axios.post('/api/query', formData);
+      formData.name ="";
+      formData.email ="";
+      formData.message="";
+      formData.phoneNumber="";
+      formData.service="";
+      console.log(res);
+    } catch (error) {
+      console.log(error);
+
+    }
+  }
 
   return (
     <div className="bg-pink-200 min-h-screen flex items-center justify-center px-6">
@@ -57,7 +69,7 @@ const ContactUs = () => {
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-center text-white">
           Contact Us
         </h2>
-        <form onSubmit={handleSubmit}>
+        <form>
           <div className="mb-4">
             <label className="block text-gray-300">Name</label>
             <input
@@ -130,8 +142,9 @@ const ContactUs = () => {
             ></textarea>
           </div>
           <button
-            type="submit"
+            
             className="w-full bg-pink-500 text-white py-2 sm:py-3 rounded-md hover:bg-pink-600 transition-colors"
+            onClick={handleSubmit}
           >
             Submit
           </button>
