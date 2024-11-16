@@ -1,4 +1,6 @@
 "use client"; // Make sure this is the first line in your file
+import background from '../../public/1.jpg'
+import map from '../../public/7.png'
 
 import React, { useState } from "react";
 import { FaHandshake, FaTrophy } from "react-icons/fa"; // Importing the icons from react-icons
@@ -11,7 +13,8 @@ import {
   FaMobileAlt,
   FaCogs,
 } from "react-icons/fa";
-import Link from "next/link"; // Import Link if you're using Next.js routing
+import Link from "next/link"; // Import Link if you're using Next.js routin
+import Image from 'next/image';
 
 const Home = () => {
   // State to manage the page (first 3 cards or all)
@@ -49,8 +52,8 @@ const Home = () => {
           {/* Video Element */}
           {/* Image Element */}
           <div className="absolute inset-0 w-full h-full">
-            <imgage
-              src="/1.jpg"
+            <Image
+              src={background}
               alt="Background"
               className="w-full h-full object-cover"
             />
@@ -369,10 +372,10 @@ const Home = () => {
         </div>
         <div className="py-12 sm:py-16 lg:py-20 px-6 sm:px-8 max-w-7xl mx-auto flex items-center">
           <div className="w-1/2">
-            <image
-              src="/7.png"
-              alt="Image"
-              className="w-8/9 h-96 object-cover" // Adjusted width and height
+          <Image
+              src={map}
+              alt="Background"
+              className="w-full h-96 object-cover"
             />
           </div>
           <div className="w-1/2 ml-8">
