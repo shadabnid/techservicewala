@@ -38,12 +38,12 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="bg-pink-200 min-h-screen flex items-center justify-center px-6">
+    <div className="bg-white min-h-screen flex flex-col md:flex-row items-center justify-center px-6">
       {/* Left Content */}
-      <div className="w-full max-w-md p-6 mr-6 flex flex-col justify-center">
+      <div className="w-full max-w-md p-6 flex flex-col justify-center md:mr-6 mb-8 md:mb-0">
         <p className="text-sm font-bold text-gray-700">CONTACT</p>
-        <h1 className="text-5xl sm:text-6xl font-bold text-black mb-6">
-          We're here to help you grow
+        <h1 className="text-5xl sm:text-6xl font-bold text-blue-500 mb-6">
+        We&apos;re here to help you grow
         </h1>
         <p className="text-xl sm:text-2xl text-gray-700">
           Feel free to reach out to us through your preferred method of contact.
@@ -53,8 +53,8 @@ const ContactUs = () => {
       </div>
 
       {/* Right Form */}
-      <div className="w-full max-w-xl p-6 bg-black text-white shadow-lg rounded-md ml-auto mt-8 sm:mt-10 md:mt-12 lg:mt-14">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-center text-white">
+      <div className="w-full max-w-xl p-6 bg-black text-white shadow-lg rounded-md md:ml-auto mb-4">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-center text-blue-500">
           Contact Us
         </h2>
         <form onSubmit={handleSubmit}>
@@ -65,7 +65,7 @@ const ContactUs = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-600 bg-black text-white rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500"
+              className="w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-600 bg-black text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="Name"
               required
             />
@@ -77,7 +77,7 @@ const ContactUs = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-600 bg-black text-white rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500"
+              className="w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-600 bg-black text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="Email"
               required
             />
@@ -91,7 +91,7 @@ const ContactUs = () => {
               name="service"
               value={formData.service}
               onChange={handleChange}
-              className="w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-600 bg-black text-white rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500"
+              className="w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-600 bg-black text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
               style={{
                 maxHeight: "12rem", // Limits height to display approximately 6 options
@@ -113,7 +113,7 @@ const ContactUs = () => {
               name="phoneNumber"
               value={formData.phoneNumber}
               onChange={handleChange}
-              className="w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-600 bg-black text-white rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500"
+              className="w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-600 bg-black text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="Phone Number"
               required
             />
@@ -124,14 +124,14 @@ const ContactUs = () => {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              className="w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-600 bg-black text-white rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500"
+              className="w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-600 bg-black text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               rows="4"
               placeholder="What can we help you with?"
             ></textarea>
           </div>
           <button
             type="submit"
-            className="w-full bg-pink-500 text-white py-2 sm:py-3 rounded-md hover:bg-pink-600 transition-colors"
+            className="w-full bg-blue-500 text-white py-2 sm:py-3 rounded-md hover:bg-blue-600 transition-colors"
           >
             Submit
           </button>
