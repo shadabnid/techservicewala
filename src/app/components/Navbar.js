@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { usePathname } from "next/navigation"; // Use usePathname for App Router
 import { GiHamburgerMenu as MenuIcon } from "react-icons/gi";
 import { IoCloseSharp as CloseIcon } from "react-icons/io5";
+import Logo from '../../../public/logo.jpeg'
 
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(false);
