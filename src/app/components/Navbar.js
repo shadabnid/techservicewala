@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from 'next/image';
 import React, { useState } from "react";
 import { usePathname } from "next/navigation"; // Use usePathname for App Router
 import { GiHamburgerMenu as MenuIcon } from "react-icons/gi";
@@ -24,7 +25,11 @@ const Navbar = () => {
     <>
       <nav className="sticky top-0 z-40 px-4 py-6 bg-blue-500">
         <div className="flex justify-between items-center">
-          <span className="text-[1.5rem] text-white">LOGO</span>
+        <Image
+              src={Logo}
+              alt="Background"
+              className="w-12 h-12 object-cover rounded-full"
+            />
           <MenuIcon
             className="text-[1.5rem] text-white hover:bg-bgButtonHover cursor-pointer lg:hidden"
             onClick={toggleVisibility}
