@@ -74,8 +74,7 @@ const AboutUs = () => {
               Strong Relationships
             </h2>
             <p className="text-gray-500">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            Strong relationships in a website development agency foster seamless collaboration with clients, ensuring their vision is effectively realized. They build trust and loyalty, driving long-term partnerships and successful project outcomes.
             </p>
           </div>
           {/* Excellence At Work */}
@@ -87,8 +86,7 @@ const AboutUs = () => {
               Excellence At Work
             </h2>
             <p className="text-gray-500">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            Excellence at work is about delivering top-tier quality, exceeding client expectations with innovative solutions, and maintaining a commitment to continuous improvement in every project. It reflects dedication, professionalism, and the pursuit of perfection in all aspects of the agency&apos;s operations.
             </p>
           </div>
           {/* Innovation & Creativity */}
@@ -100,8 +98,7 @@ const AboutUs = () => {
               Innovation & Creativity
             </h2>
             <p className="text-gray-500">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            Innovation and creativity drive unique and forward-thinking solutions, setting the agency apart in a competitive landscape. They inspire groundbreaking designs and functionalities, transforming ideas into impactful digital experiences.
             </p>
           </div>
         </div>

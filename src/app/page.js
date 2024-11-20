@@ -370,15 +370,15 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="py-12 sm:py-16 lg:py-20 px-6 sm:px-8 max-w-7xl mx-auto flex items-center">
-          <div className="w-1/2">
+        <div className="py-12 sm:py-16 lg:py-20 px-6 sm:px-8 max-w-7xl mx-auto flex flex-col md:flex-row items-center">
+          <div className="w-[16rem] md:w-1/2 ">
           <Image
               src={map}
               alt="Background"
               className="w-full h-96 object-cover"
             />
           </div>
-          <div className="w-1/2 ml-8">
+          <div className="w-[16rem] md:w-1/2 md:ml-8">
             <h1 className="text-3xl sm:text-4xl font-bold text-center mb-8 text-blue-500">
               Get In Touch
             </h1>
