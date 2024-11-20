@@ -106,8 +106,7 @@ const Home = () => {
               Strong Relationships
             </h2>
             <p className="text-gray-500">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            We prioritize building strong relationships with our clients to create websites that truly reflect their vision and goals.
             </p>
           </div>
           {/* Excellence At Work */}
@@ -119,8 +118,7 @@ const Home = () => {
               Excellence At Work
             </h2>
             <p className="text-gray-500">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              Excellence at work is about delivering top-tier quality, exceeding client expectations with innovative solutions, and maintaining a commitment to continuous improvement in every project. It reflects dedication, professionalism, and the pursuit of perfection in all aspects of the agency&apos;s operations.
             </p>
           </div>
           {/* Innovation & Creativity */}
@@ -132,8 +130,7 @@ const Home = () => {
               Innovation & Creativity
             </h2>
             <p className="text-gray-500">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            Innovation and creativity drive unique and forward-thinking solutions, setting the agency apart in a competitive landscape. They inspire groundbreaking designs and functionalities, transforming ideas into impactful digital experiences.
             </p>
           </div>
         </div>
@@ -372,7 +369,7 @@ const Home = () => {
         </div>
         <div className="py-12 sm:py-16 lg:py-20 px-6 sm:px-8 max-w-7xl mx-auto flex flex-col md:flex-row items-center">
           <div className="w-[16rem] md:w-1/2 ">
-          <Image
+            <Image
               src={map}
               alt="Background"
               className="w-full h-96 object-cover"
