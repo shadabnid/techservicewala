@@ -19,16 +19,16 @@ const Footer = () => {
             <div className='mt-8 md:mx-[7rem] md:flex md:justify-between'>
 
                 <div className='flex gap-[12rem] ml-1'>
-                    <span>Privacy Policy</span>
-                    <span>Terms of Use</span>
+                    {/* <span>Privacy Policy</span>
+                    <span>Terms of Use</span> */}
                     <span>Mobile : +919628995757</span>
                 </div>
-                <div className='flex gap-4 text-[1.2rem] text-white mt-6 md:mt-0'>
+                {/* <div className='flex gap-4 text-[1.2rem] text-white mt-6 md:mt-0'>
                     <Link href="/"><FaLinkedin /></Link>
                     <Link href="/"><FaSquareXTwitter /></Link>
                     <Link href="/"><FaFacebookSquare /></Link>
                     <Link href="/"><FaInstagramSquare /></Link>
-                </div>
+                </div> */}
             </div>
         </div>
     )
