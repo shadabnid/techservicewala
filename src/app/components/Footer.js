@@ -21,6 +21,7 @@ const Footer = () => {
                 <div className='flex gap-[12rem] ml-1'>
                     <span>Privacy Policy</span>
                     <span>Terms of Use</span>
+                    <span>Mobile : +919628995757</span>
                 </div>
                 <div className='flex gap-4 text-[1.2rem] text-white mt-6 md:mt-0'>
                     <Link href="/"><FaLinkedin /></Link>
