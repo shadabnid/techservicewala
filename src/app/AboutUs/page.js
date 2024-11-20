@@ -74,7 +74,7 @@ const AboutUs = () => {
               Strong Relationships
             </h2>
             <p className="text-gray-500">
-            Strong relationships in a website development agency foster seamless collaboration with clients, ensuring their vision is effectively realized. They build trust and loyalty, driving long-term partnerships and successful project outcomes.
+            We prioritize building strong relationships with our clients to create websites that truly reflect their vision and goals.
             </p>
           </div>
           {/* Excellence At Work */}
