@@ -28,7 +28,7 @@ const Navbar = () => {
         <Image
               src={Logo}
               alt="Background"
-              className="w-12 h-10 object-cover"
+              className="w-12 h-12 object-cover rounded-full"
             />
           <MenuIcon
             className="text-[1.5rem] text-white hover:bg-bgButtonHover cursor-pointer lg:hidden"
